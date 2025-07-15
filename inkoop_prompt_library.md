@@ -1,4 +1,4 @@
-# Inkoop Prompt Library 2.0 — Definitieve Uitgave
+# Inkoop Prompt Library
 
 > **Doel & doelgroep**  
 > Deze bibliotheek helpt inkoopprofessionals — van tactisch buyer tot CPO — om Large‑Language‑Models (LLM's) efficiënt toe te passen binnen het volledige inkoopproces. Vul alle `[placeholders]` vóór gebruik aan met jouw eigen context.
