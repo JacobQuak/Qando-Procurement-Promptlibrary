@@ -3,6 +3,16 @@
 > **Doel & doelgroep**  
 > Deze bibliotheek helpt inkoopprofessionals — van tactisch buyer tot CPO — om Large‑Language‑Models (LLM's) efficiënt toe te passen binnen het volledige inkoopproces. Vul alle `[placeholders]` vóór gebruik aan met jouw eigen context.
 
+Deze promptbibliotheek biedt meer dan 50 direct inzetbare prompts voor:
+
+📊 Marktanalyse
+🔍 Leveranciersselectie
+🤝 Onderhandelingen
+📋 Contractevaluatie
+💰 Kostenbesparing
+⚠️ Risicoanalyse
+
+
 ---
 
 ## 1 Prompt‑technieken (uitgebreid)
