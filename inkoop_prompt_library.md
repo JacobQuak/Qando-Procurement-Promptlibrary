@@ -40,52 +40,58 @@ Deze promptbibliotheek biedt meer dan 50 direct inzetbare prompts voor:
 
 ### 2.1 Leveranciersselectie
 
-#### 1. Scorecard Ontwikkelaar
+#### 1. Scorecard Ontwikkelaar 
 **Doel:** Bouw een gewogen leveranciers‑scorecard met criteriapunten.
 
 **Voorbeeldprompts:**
+**Prompt 1 – [Role-Based + Polite + Placeholders]**
 ```
-Je bent een ervaren sourcing specialist. Ontwikkel een leveranciers-scorecard voor [productcategorie] met 8-10 evaluatiecriteria. Geef elk criterium een gewicht (totaal 100%) en definieer een 5-punts beoordelingsschaal. Voeg bij elk criterium praktische sub-vragen toe die een buyer kan gebruiken tijdens leveranciersgesprekken.
-```
-
-```
-Creëer een scorecard-template voor het selecteren van [type leverancier] voor onze [industrie]. Includeer zowel harde criteria (prijs, kwaliteit, levertijd) als zachte criteria (innovatie, duurzaamheid, cultuur-fit). Zorg dat het totaal overzichtelijk blijft op maximaal 2 pagina's.
+Je bent een ervaren sourcing specialist. Ontwikkel een leveranciers-scorecard voor [productcategorie] met 8-10 evaluatiecriteria. Geef elk criterium een gewicht (totaal 100%) en definieer een 5-punts beoordelingsschaal. Voeg bij elk criterium praktische sub-vragen toe die een buyer kan gebruiken tijdens leveranciersgesprekken, alsjeblieft.
 ```
 
+**Prompt 2 – [Few-Shot + Role-Based]**
 ```
-Ontwikkel een dynamische leveranciers-scorecard waarin criteria automatisch zwaarder wegen naarmate [specifieke business requirements] belangrijker worden. Maak onderscheid tussen must-haves en nice-to-haves, en voeg een risico-component toe.
+Creëer een scorecard-template voor het selecteren van [type leverancier] voor onze [industrie]. Includeer zowel harde criteria (prijs, kwaliteit, levertijd) als zachte criteria (innovatie, duurzaamheid, cultuur-fit). Zorg dat het totaal overzichtelijk blijft op maximaal 2 pagina's. Voorbeeld 1: Softwareleverancier → prijs 30 %, SLA 25 %, innovatie 20 %, cultuurfit 15 %, duurzaamheid 10 %.
+```
+
+**Prompt 3 – [Chain-of-Thought + Placeholders]**
+```
+Ontwikkel een dynamische leveranciers-scorecard waarin criteria automatisch zwaarder wegen naarmate [specifieke business requirements] belangrijker worden. Maak onderscheid tussen must-haves en nice-to-haves, en voeg een risico-component toe. Denk stap voor stap na over: 1) criteriakeuze, 2) weging, 3) scorelogica, 4) risico-inpassing.
 ```
 
 #### 2. Audit‑Checklist Maker
 **Doel:** Ontwikkel een ISO‑gebaseerde audit‑checklist.
 
 **Voorbeeldprompts:**
+**Prompt 4 – [Role-Based + Few-Shot + Polite]**
 ```
-Je bent een kwaliteitsauditor met 15 jaar ervaring. Maak een uitgebreide audit-checklist voor [leverancier type] gebaseerd op ISO 9001:2015 standaarden. Groepeer vragen per proces (management, productie, kwaliteitscontrole) en geef elke vraag een risico-score van 1-5.
-```
-
-```
-Ontwikkel een pre-audit questionnaire voor [specifieke industrie] leveranciers. Focus op compliance, financiële stabiliteit, operationele capaciteit en ESG-aspecten. Maak het praktisch bruikbaar voor remote assessment voorafgaand aan een fysieke audit.
+Je bent een kwaliteitsauditor met 15 jaar ervaring. Maak een uitgebreide audit-checklist voor [leverancier type] gebaseerd op ISO 9001:2015 standaarden, alsjeblieft. Groepeer vragen per proces (management, productie, kwaliteitscontrole) en geef elke vraag een risico-score van 1-5. Voorbeeld: Management – "Is er een kwaliteitsbeleid gedefinieerd?", score 4.
 ```
 
+**Prompt 5 – [Placeholders + Polite]**
 ```
-Creëer een audit-checklist die zowel geschikt is voor eerste leveranciers-kwalificatie als voor periodieke herbeoordelingen. Includeer specifieke aandachtspunten voor [productcategorie] en geef duidelijke go/no-go criteria per sectie.
+Ontwikkel een pre-audit questionnaire voor [specifieke industrie] leveranciers. Focus op compliance, financiële stabiliteit, operationele capaciteit en ESG-aspecten. Maak het praktisch bruikbaar voor remote assessment voorafgaand aan een fysieke audit, alsjeblieft.
+```
+**Prompt 6 – [Meta-Prompting + Polite]**
+```
+Creëer een audit-checklist die zowel geschikt is voor eerste leveranciers-kwalificatie als voor periodieke herbeoordelingen. Includeer specifieke aandachtspunten voor [productcategorie] en geef duidelijke go/no-go criteria per sectie, alsjeblieft. Voeg aan het eind een zelf-check toe: Zijn alle relevante risico’s afgedekt? Zijn de criteria meetbaar en herhaalbaar?
 ```
 
 #### 3. RFQ‑Template Architect
 **Doel:** Genereer een gestandaardiseerd RFQ‑document.
 
 **Voorbeeldprompts:**
+**Prompt 7 – [Role-Based + Polite]**
 ```
-Je bent een strategic sourcing manager. Ontwerp een professionele RFQ-template voor [productcategorie] inkoop. Includeer alle benodigde secties: company background, product specifications, commercial terms, evaluation criteria, timeline, en legal requirements. Zorg voor een heldere structuur die leveranciers gemakkelijk kunnen volgen.
+Je bent een strategic sourcing manager. Ontwerp een professionele RFQ-template voor [productcategorie] inkoop. Includeer alle benodigde secties: company background, product specifications, commercial terms, evaluation criteria, timeline, en legal requirements. Zorg voor een heldere structuur die leveranciers gemakkelijk kunnen volgen, alsjeblieft.
 ```
-
+**Prompt 8 – [Few-Shot + Polite]**
 ```
-Maak een RFQ-template specifiek voor [service type] met focus op performance indicators, SLA's, en prijsstructuur. Voeg een section toe voor leveranciers om hun toegevoegde waarde en differentiatie te beschrijven. Includeer een evaluatiematrix die we kunnen gebruiken voor objectieve vergelijking.
+Maak een RFQ-template specifiek voor [service type] met focus op performance indicators, SLA's, en prijsstructuur. Voeg een section toe voor leveranciers om hun toegevoegde waarde en differentiatie te beschrijven. Includeer een evaluatiematrix die we kunnen gebruiken voor objectieve vergelijking, alsjeblieft.
 ```
-
+**Prompt 9 – [Modular Design + Self-Check]**
 ```
-Ontwikkel een modulaire RFQ-template die we kunnen aanpassen voor verschillende productcategorieën. Maak standaard-secties voor algemene terms en aanpasbare secties voor product-specifieke requirements. Voeg een checklist toe voor buyers om te controleren of alle relevante punten zijn opgenomen.
+ntwikkel een modulaire RFQ-template die we kunnen aanpassen voor verschillende productcategorieën. Maak standaard-secties voor algemene terms en aanpasbare secties voor product-specifieke requirements. Voeg een checklist toe voor buyers om te controleren of alle relevante punten zijn opgenomen. Zelf-check: Zijn alle modules herbruikbaar? Zijn de invulvelden consistent benoemd?
 ```
 
 ### 2.2 Onderhandeling
@@ -94,32 +100,34 @@ Ontwikkel een modulaire RFQ-template die we kunnen aanpassen voor verschillende 
 **Doel:** Bepaal gedeelde waarden en compromisruimtes.
 
 **Voorbeeldprompts:**
+**Prompt 10 – [Analogical Prompting + Polite]**
 ```
-Je bent een ervaren onderhandelaar. Analyseer de onderhandelingspositie met [leverancier] voor [product/service]. Identificeer 5 potentiële win-win scenario's waarin beide partijen voordeel behalen. Geef per scenario concrete voorbeelden van wat wij bieden versus wat zij bieden, en schat de waarde voor beide partijen in.
+Je bent een ervaren onderhandelaar. Analyseer de onderhandelingspositie met [leverancier] voor [product/service], alsjeblieft. Identificeer 5 potentiële win-win scenario's waarin beide partijen voordeel behalen. Geef per scenario concrete voorbeelden van wat wij bieden versus wat zij bieden, en schat de waarde voor beide partijen in.
 ```
-
+**Prompt 11 – [Value-Mapping + Tree-of-Thought]**
 ```
 Ontwikkel een value-creation matrix voor onze onderhandeling met [leverancier naam]. Map alle mogelijke concessies (prijs, volumes, contractduur, betalingsvoorwaarden, exclusiviteit) tegen hun strategische waarde voor beide partijen. Identificeer de beste trade-offs die tot een optimaal resultaat leiden.
 ```
-
+**Prompt 12 – [CoT + Role-Based]**
 ```
-Creëer een onderhandelingsstrategie die verder kijkt dan alleen prijs. Analyseer hoe we [specifieke business needs] kunnen koppelen aan [leverancier capabilities] voor wederzijds voordeel. Geef concrete voorbeelden van non-monetary benefits die waardevol zijn voor beide partijen.
+Creëer een onderhandelingsstrategie die verder kijkt dan alleen prijs. Analyseer hoe we [specifieke business needs] kunnen koppelen aan [leverancier capabilities] voor wederzijds voordeel. Geef concrete voorbeelden van non-monetary benefits die waardevol zijn voor beide partijen. Denk in de volgende stappen: 1) behoeftenanalyse, 2) matchen van belangen, 3) formuleren voorstellen.
 ```
 
 #### 2. Onderhandelings­Roadmap Builder
 **Doel:** Stel een stappenplan inclusief BATNA op.
 
 **Voorbeeldprompts:**
+**Prompt 13 – [Chain-of-Thought + Role-Based]**
 ```
 Je bent een strategic sourcing expert. Bouw een complete onderhandelingsroadmap voor [specifieke deal]. Start met stakeholder-mapping, definieer onze BATNA, stel een opening-stance op, en creëer een stap-voor-stap plan met timing, agenda-punten, en fall-back posities voor elke onderhandelingsronde.
 ```
-
+**Prompt 14 – [Self-Correction + Placeholders]**
 ```
-Ontwikkel een gestructureerd stappenplan voor een multi-stakeholder onderhandeling met [leverancier]. Includeer pre-meeting preparation, opening statements, issue-by-issue aanpak, en closing strategy. Geef per stap concrete talking points en mogelijke leveranciers-reacties met onze responses.
+Ontwikkel een gestructureerd stappenplan voor een multi-stakeholder onderhandeling met [leverancier]. Includeer pre-meeting preparation, opening statements, issue-by-issue aanpak, en closing strategy. Geef per stap concrete talking points en mogelijke leveranciers-reacties met onze responses. Voeg aan het eind een zelfcheck toe: Welke valkuilen zie je in dit plan? Welke onderdelen vereisen meer voorbereiding?
 ```
-
+**Prompt 15 – [Role-Based + Analogical Prompting + Timing Strategy]**
 ```
-Maak een onderhandelings-playbook voor [type contract] heronderhandelingen. Analyseer onze huidige positie, market alternatives, en set realistic targets. Ontwikkel een timing-strategy en identificeer de optimale momenten voor pressure en voor concessies.
+Maak een onderhandelings-playbook voor [type contract] heronderhandelingen. Analyseer onze huidige positie, market alternatives, en set realistic targets. Ontwikkel een timing-strategy en identificeer de optimale momenten voor pressure en voor concessies. Gebruik inzichten uit ten minste twee vergelijkbare onderhandelingen als input.
 ```
 
 #### 3. Concession Trade‑Off Planner
